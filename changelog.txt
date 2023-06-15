@@ -1,0 +1,13 @@
+R12 Changelog:
+--------------
+- Upstream from various sources
+- TTY: Update Driver from Samsung
+- HID: add PlayStation Driver 
+- GPU: Mali - enabled adaptive power policy, coarse_demand on suspend (playing music while screen off, saves power)
+- I/O: add 3 new Scheduler (anxiety,sio,fiops), other scheduler optimizations (schedutil)
+- Set Kernel timer interrupt frequency from 250Hz to 300HZ (reduce jitter/jiffies)
+- UI lags reduced, scrolling lag reduced, a bit less battery drain, Apps start improved
+- picked some cpu_load_balance and cpu_idle fixes
+- Wakelock_blocker fixes
+- Other small optimizations
+- Build with Neutron-clang17
