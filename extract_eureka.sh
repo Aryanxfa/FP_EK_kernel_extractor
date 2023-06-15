@@ -14,5 +14,7 @@ cd eureka_zip/
 
 # Loop through each folder
 for folder in "${folders[@]}"; do
-    mv "*$folder*/dtbo/dtbo.img" ../$folder/
+    mv *$folder-*"/dtbo/dtbo.img" "../$folder/"
+    mv *$folder-*"/dtb/oneui3/perm/5/dtb.img" "../$folder/"
+    mv *$folder-*"/kernel/oneui4/Image" "../$folder/"
 done
