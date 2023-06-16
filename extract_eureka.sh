@@ -26,5 +26,9 @@ done
 cd ..
 
 for folder in "${folders[@]}"; do
+    cd $folder
+    echo 
+    echo Packing $folder...
     ../ramdisk_integrate.sh
+    cd ..
 done
