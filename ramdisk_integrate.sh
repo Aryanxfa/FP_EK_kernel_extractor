@@ -13,3 +13,4 @@ cp ../ramdisk.cpio ./
 magiskboot repack dummy_boot.img boot.img
 
 rm header kernel dummy_boot.img ramdisk.cpio
+chmod 644 *
