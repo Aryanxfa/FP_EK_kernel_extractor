@@ -1,4 +1,4 @@
 name=SRPSA16A009KU
 cmdline=androidboot.selinux=permissive androidboot.selinux=permissive
 os_version=13.0.0
-os_patch_level=2023-06
+os_patch_level=2023-07
