@@ -38,18 +38,18 @@ for folder in "${folders[@]}"; do
     cd ..
 done
 
-cd $directory_ksu
-for folder in "${folders[@]}"; do
-    # mv *$folder-*"/dtbo/dtbo.img" "../$folder/"
-    mv *$folder-*"/dtb/oneui3/perm/5/dtb.img" "../$folder/"
-    mv *$folder-*"/kernel/oneui4/Image" "../$folder/"
-done
-cd ..
+# cd $directory_ksu
+# for folder in "${folders[@]}"; do
+#     # mv *$folder-*"/dtbo/dtbo.img" "../$folder/"
+#     mv *$folder-*"/dtb/oneui3/perm/5/dtb.img" "../$folder/"
+#     mv *$folder-*"/kernel/oneui4/Image" "../$folder/"
+# done
+# cd ..
 
-for folder in "${folders[@]}"; do
-    cd $folder
-    echo
-    echo Packing $folder...
-    ../ramdisk_integrate.sh ksu.img
-    cd ..
-done
+# for folder in "${folders[@]}"; do
+#     cd $folder
+#     echo
+#     echo Packing $folder...
+#     ../ramdisk_integrate.sh ksu.img
+#     cd ..
+# done
