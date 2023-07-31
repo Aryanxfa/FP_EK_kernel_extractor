@@ -24,7 +24,7 @@ cp $directory/*a10*/META-INF/com/google/android/aroma/changelog.txt .
 # Loop through each folder
 cd $directory
 for folder in "${folders[@]}"; do
-    mv *$folder-*"/dtbo/dtbo.img" "../$folder/"
+    # mv *$folder-*"/dtbo/dtbo.img" "../$folder/"
     mv *$folder-*"/dtb/oneui3/perm/5/dtb.img" "../$folder/"
     mv *$folder-*"/kernel/oneui4/Image" "../$folder/"
 done
@@ -40,7 +40,7 @@ done
 
 cd $directory_ksu
 for folder in "${folders[@]}"; do
-    mv *$folder-*"/dtbo/dtbo.img" "../$folder/"
+    # mv *$folder-*"/dtbo/dtbo.img" "../$folder/"
     mv *$folder-*"/dtb/oneui3/perm/5/dtb.img" "../$folder/"
     mv *$folder-*"/kernel/oneui4/Image" "../$folder/"
 done
