@@ -5,15 +5,15 @@ if [ -z "$1" ]; then
     exit
 fi
 
-if [ ! -f ../ramdisk.cpio ]; then
-    echo "Ramdisk Missing"
-    exit
-fi
+# if [ ! -f ../ramdisk.cpio ]; then
+#     echo "Ramdisk Missing"
+#     exit
+# fi
 mv Image kernel
 rm $1
 cp ../dummy_boot.img ./
 cp ../header ./
-cp ../ramdisk.cpio ./
+# cp ../ramdisk.cpio ./
 
 magiskboot repack dummy_boot.img $1
 
