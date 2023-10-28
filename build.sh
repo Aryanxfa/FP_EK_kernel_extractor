@@ -3,10 +3,8 @@
 # List of folders where the script will run
 folders=("a10" "a20" "a20e" "a30" "a30s" "a40")
 directory=eureka_zip/
-directory_ksu=eureka_zip_ksu/
 
 mkdir $directory
-mkdir $directory_ksu
 
 # Loop through each folder
 for folder in "${folders[@]}"; do
@@ -21,10 +19,11 @@ ls $directory >../version
 
 # Loop through each folder
 cd $directory
+pwd
 for folder in "${folders[@]}"; do
-    mv *$folder-*"/dtbo/dtbo.img" "../$folder/"
-    mv *$folder-*"/dtb/oneui3/perm/5/dtb.img" "../$folder/"
-    mv *$folder-*"/kernel/oneui4/Image" "../$folder/"
+    # mv *$folder-*"/dtbo/dtbo.img" "../$folder/"
+    # mv *$folder-*"/dtb/oneui3/perm/5/dtb.img" "../$folder/"
+    mv *$folder-*"/kernel/oneui3/Image" "../$folder/"
 done
 cd ..
 
